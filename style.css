@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+    main {
+        margin-top: 40px;
+    }
+
+    #task-input {
+        max-width: 500px;
+    }
+
+    .task-list-section {
+        max-width: 800px;
+    }
+}
+
+.task-input-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .task-input-section form {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+
+#task-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.task-list-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    /* flex-grow: 1; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* flex-wrap: wrap;
+    flex-grow: 1; */
+    border-radius: 5px;
+}
+
+.delete-btn {
+    
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: end;
+}
+.checkBox{
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+#notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    display: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
