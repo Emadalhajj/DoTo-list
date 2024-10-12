@@ -88,23 +88,28 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
+
 }
 
 li {
     background-color: white;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 10px;
     display: grid;
-    grid-template-columns: 70% 15% 15%;
-    /* flex-grow: 1; */
+    grid-template-columns: 50% 15% 15% 15%;
+    
     /* justify-content: space-between; */
     align-items: center;
     /* flex-wrap: wrap;
     flex-grow: 1; */
     border-radius: 5px;
+    margin-top: 3px;
+    margin-right: 10px;
+    /* : ; */
 }
 
-.delete-btn {
+
+.delete-btn , .edit-btn {
     
     background-color: #dc3545;
     color: white;
@@ -113,6 +118,9 @@ li {
     cursor: pointer;
     border-radius: 5px;
     justify-content: end;
+}
+.edit-btn {
+    background-color: teal;
 }
 .checkBox{
     height: 30px;
